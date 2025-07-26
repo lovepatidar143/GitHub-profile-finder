@@ -54,7 +54,7 @@ form.addEventListener("submit",(event)=>{
         console.log(resolve);// resolve is the final obj
         input.value = "";
         document.querySelector(".user-profile").classList.remove("hidden");
-        document.querySelector("img").setAttribute("src",resolve.avatar_url);
+        document.querySelector(".user-photo").setAttribute("src",resolve.avatar_url);
         name.innerText = `Name  :  ${resolve.name || resolve.login}`;
         bio.innerText = `Bio  :  ${resolve.bio || "No Bio Available"}`;
         followers.innerText = `Followers. : ${resolve.followers}`;
