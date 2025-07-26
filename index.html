@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class=" searchBar navbar bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand">Navbar</a>
+                <a class="navbar-brand"><img src="git hub.png" alt="git hub " class="logo" height="30px">Git Hub Profile Finder</a>
                 <form class="d-flex search-form" role="search">
                 <input class="form-control me-2" id="username" type="search" required name="username" placeholder="Search" aria-label="Search"/>
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -35,55 +35,33 @@
     </header>
     <main>
         <div class="user-profile hidden">
-            <!-- <div class="avatar">User Photo
-                <img src="" alt="user photo">
+            <div class="avatar">
+                <img src="git hub.png" alt="user photo" class="user-photo">
             </div>
-            <div class="details">User Details
+            <div class="details">
                 <h3 class="name"></h3>
                 <p class="id"></p>
                 <p class="bio"></p>
                 <p class="repo"></p>
                 <p class="following"></p>
                 <p class="followers"></p>
-                
-            </div> -->
-
-
-             <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class=" name card-title">Card title</h5>
-                        <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                        <h3 class="name"></h3> -->
-                <p class="id card-text"></p>
-                <p class="bio card-text"></p>
-                <p class="repo card-text"></p>
-                <p class="following card-text"></p>
-                <p class="followers card-text"></p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-
-
-
-
-
-
+   
+            </div>
         </div>
+
+
         <div class="error-message hidden">User not found !</div>
         <div class="loader hidden">Loading......</div>
 
     </main>
-    <footer>
 
-    </footer>
+        <footer class="bg-dark text-white text-center py-3 mt-auto">
+  <div class="container">
+    <p class="mb-1">© 2025 GitHub Profile Finder</p>
+    <p class="mb-0">Made with ❤️ by Love</p>
+  </div>
+</footer>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
